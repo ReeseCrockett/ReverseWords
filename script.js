@@ -28,7 +28,6 @@ function addToList(array, list) {
     let newLi = document.createElement("li");
     let ulLen = ul.getElementsByTagName('li').length+1;
     let textnode = document.createTextNode('case #' + ulLen + ": " + text);
-    document.getElementById('counter').innerHTML = ulLen;
     newLi.appendChild(textnode);
     ul.appendChild(newLi);
 }
